@@ -49,7 +49,8 @@ export const Repository = styled.div`
         small {
             font-weight: normal;
             font-size: 12px;
-            color: #999;
+            margin-left: 6px;
+            color: black;
             font-style: italic;
         }
 

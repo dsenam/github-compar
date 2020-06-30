@@ -21,29 +21,29 @@ export default function CompareList({ repositories }) {
     };
     return (
         <Container>
-            {repositories.map((repo) => (
-                <Repository key={repo.id}>
+            {repositories.map((repository) => (
+                <Repository key={repository.id}>
                     <header>
                         <img
-                            src={repo.owner.avatar_url}
-                            alt={repo.owner.login}
+                            src={repository.owner.avatar_url}
+                            alt={repository.owner.login}
                         />
-                        <strong>{repo.name}</strong>
-                        <small>{repo.login}</small>
+                        <strong>{repository.name}</strong>
+                        <small>{repository.login}</small>
                     </header>
                     <ul>
                         <li>
-                            {repo.stargazers_count}
+                            {repository.stargazers_count}
                             <small>stars</small>
                         </li>
                         <li>
-                            {repo.forks_count} <small>forks</small>
+                            {repository.forks_count} <small>forks</small>
                         </li>
                         <li>
-                            {repo.openopen_issues_count} <small>issues</small>
+                            {repository.open_issues_count} <small>issues</small>
                         </li>
                         <li>
-                            {repo.pushed_at} <small>last commit</small>
+                            {repository.lastCommit} <small>last commit</small>
                         </li>
                     </ul>
                 </Repository>
